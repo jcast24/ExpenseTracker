@@ -1,6 +1,6 @@
 export function ExpenseDate(props) {
     return (
-        <div className={"expense-item__date"}>
+        <div className={"expense-date"}>
             <div>{props.month}</div>
             <div>{props.day}</div>
             <div>{props.year}</div>

@@ -28,18 +28,26 @@ function App() {
             title: 'Nintendo Switch',
             amount: 299.99,
             date: new Date(2022, 5, 10),
+        },
+        {
+            id: 'e6',
+            title: 'Sony PSP',
+            amount: 149.99,
+            date: new Date(2022, 3, 10),
         }
     ];
 
     return (
-        <div>
+        <main>
             <h1>Expenses</h1>
-            {expenses.map((expense) => (
-                <div key={expense.id}>
-                    <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date}/>
-                </div>
-            ))}
-        </div>
+            <div className={"main-background"}>
+                {expenses.map((expense) => (
+                    <div key={expense.id}>
+                        <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date}/>
+                    </div>
+                ))}
+            </div>
+        </main>
     )
 }
 
